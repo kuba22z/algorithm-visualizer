@@ -1,6 +1,18 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped
 with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Automatic Setup
+
+```bash
+npx create-next-app@latest --typescript
+```
+
+## Next Upgrade
+
+```bash
+npm i next@latest react@latest react-dom@latest eslint-config-next@latest
+```
+
 ## Getting Started
 
 First, run the development server:
