@@ -1,6 +1,7 @@
+import * as React from "react";
 import {useState} from "react";
 import {Visualizer} from "../components/Visualizer";
-import {FieldArray} from "../components/FieldArray";
+import {VisualizerForm} from "../components/VisualizerForm";
 
 
 export default function Dashboard() {
@@ -9,8 +10,9 @@ export default function Dashboard() {
 
     return (
         <div>
-            <FieldArray setInput={setInput} setDelay={setDelay}/>
             <Visualizer input={input} delay={delay}/>
+            <br/>
+            <VisualizerForm setInput={setInput} setDelay={setDelay}/>
         </div>
     );
 }

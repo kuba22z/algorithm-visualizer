@@ -1,6 +1,46 @@
-.container {
-    padding: 0 2rem;
+@media (min-width: 576px) {
+    .container {
+        max-width: 540px;
+    }
 }
+
+@media (min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+}
+
+.flex {
+    flex: 1
+}
+
+.title {
+    font-weight: 600;
+    font-size: 4.2rem;
+    display: inline-block;
+    position: relative;
+}
+
 
 .main {
     min-height: 100vh;
