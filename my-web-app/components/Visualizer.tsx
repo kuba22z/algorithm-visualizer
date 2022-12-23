@@ -3,7 +3,7 @@ import {useTransition} from "react-transition-state";
 import {RectangleContainer} from "./RectangleContainer";
 import {Rectangle} from "./Rectangle";
 import {useDelayedForEach} from "../utils/hooks/useDelayedForEach";
-import {Nullable} from "../utils/types";
+import {Nullable} from "../utils/types/common";
 
 export type VisualizerProps = { input: any[], delay: Nullable<number> };
 
