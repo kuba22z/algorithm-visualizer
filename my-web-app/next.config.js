@@ -11,6 +11,7 @@ if (isGithubActions) {
     assetPrefix = `/${repo}/`
     basePath = `/${repo}`
 }
+images.unoptimized = true
 
 const nextConfig = {
     reactStrictMode: true,
