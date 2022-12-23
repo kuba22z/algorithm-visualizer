@@ -14,7 +14,6 @@ if (isGithubActions) {
 
 const nextConfig = {
     reactStrictMode: true,
-    images: {unoptimized: true},
     swcMinify: true,
     assetPrefix: assetPrefix,
     basePath: basePath,
