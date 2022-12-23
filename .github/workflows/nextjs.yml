@@ -29,7 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Set project dir environment var
-        run: echo ::set-env name=PROJECT_DIR::"$GITHUB_WORKSPACE/my-web-app"
+        run: echo "PROJECT_DIR=$GITHUB_WORKSPACE/my-web-app" >> $GITHUB_ENV
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
