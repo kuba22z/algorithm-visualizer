@@ -1,0 +1,13 @@
+
+.rectangle {
+    transition: all 0.75s;
+}
+
+.rectangle.exiting {
+    opacity: 0;
+    transform: scale(0.5);
+}
+
+.rectangle.exited {
+    display: none;
+}
