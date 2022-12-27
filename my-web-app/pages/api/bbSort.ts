@@ -10,6 +10,12 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Changes>
 ) {
+    res.setHeader("Access-Control-Allow-Origin", "https://kuba22z.github.io");
+    res.setHeader('Access-Control-Allow-Methods', 'POST');
+    res.setHeader(
+        'Access-Control-Allow-Headers',
+        'X-CSRF-Token, X-Requested-With, Accept, Accept-Version, Content-Length, Content-MD5, Content-Type, Date, X-Api-Version'
+    )
     console.log(req)
     const input: string[] = JSON.parse(req.body)
     const inputAsNumbers = input.map(value => Number(value));
