@@ -10,7 +10,6 @@ export default function handler(
     req: NextApiRequest,
     res: NextApiResponse<Changes>
 ) {
-    console.log(req)
     const input: string[] = JSON.parse(req.body)
     const inputAsNumbers = input.map(value => Number(value));
     res.status(200).json({changes: bblSort(inputAsNumbers)})
