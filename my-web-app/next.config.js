@@ -7,8 +7,8 @@ const nextConfig = {
     async rewrites() {
         return [
             {
-                source: '/dashboard',
-                destination: 'https://kuba22z.github.io/api/bbSort',
+                source: '/api/:path*',
+                destination: 'https://kuba22z.github.io/api/:path*',
             },
         ]
     },
