@@ -31,13 +31,14 @@ export const Visualizer = (props: VisualizerProps) => {
         handleSubmit(props.input).then(
             (res) => {
                 setChanges(res.changes)
+                setCounter(0);
             }
         );
     }, [props.input]);
 
-    useDelayedForEach(changes, (i, change) => {
+    const {setCounter} = useDelayedForEach(changes, (i, change) => {
         if (i > 0) {
-            setIsChanged(changes[i - 1].map((value, j, array) => change[j] !== value))
+            setIsChanged(changes[i - 1].map((value, j, _) => change[j] !== value))
         }
         toggle()
         setNumbers(change);

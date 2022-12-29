@@ -9,4 +9,5 @@ export function useDelayedForEach<T>(arr: T[], callback: (index: number, el: T) 
         callback(counter, arr[counter])
         setCounter(counter + 1);
     }, counter < arr.length && delay ? delay : null)
+    return {setCounter}
 }
