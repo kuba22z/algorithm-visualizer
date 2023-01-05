@@ -62,7 +62,7 @@ export const Layout: FunctionComponent<InferProps<HTMLElement>> = ({children}: I
                     target="_blank"
                     rel="noopener noreferrer"
                 >
-                    Powered by{' Jakub Naumowicz '}
+                    Created by{' Jakub Naumowicz '}
                     <span className={styles.logo}>
             <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16}/>
           </span>
