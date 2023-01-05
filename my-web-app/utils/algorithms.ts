@@ -1,7 +1,7 @@
 // Bubble sort Implementation using Javascript
 
 
-export const bblSort = (arr: number[]): number[][] => {
+export const bubbleSort = (arr: number[]): number[][] => {
     let changes: number[][] = [];
     changes.push([...arr])
     for (let i = 0; i < arr.length; i++) {
