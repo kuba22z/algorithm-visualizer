@@ -1,9 +1,9 @@
 import {useEffect, useState} from "react";
 import {useTransition} from "react-transition-state";
-import {RectangleContainer} from "./RectangleContainer";
-import {Rectangle} from "./Rectangle";
-import {useDelayedForEach} from "../utils/hooks/useDelayedForEach";
-import {Nullable} from "../utils/types/common";
+import {RectangleContainer} from "./Rectangle/RectangleContainer";
+import {Rectangle} from "./Rectangle/Rectangle";
+import {useDelayedForEach} from "../../utils/hooks/useDelayedForEach";
+import {Nullable} from "../../utils/types/common";
 
 export type VisualizerProps = { input: any[], delay: Nullable<number> };
 

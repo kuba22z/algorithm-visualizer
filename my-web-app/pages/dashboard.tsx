@@ -1,7 +1,7 @@
 import * as React from "react";
 import {useState} from "react";
-import {Visualizer} from "../components/Visualizer";
-import {VisualizerForm} from "../components/VisualizerForm";
+import {Visualizer} from "../components/Visualizer/Visualizer";
+import {VisualizerForm} from "../components/Visualizer/VisualizerForm";
 
 
 export default function Dashboard() {

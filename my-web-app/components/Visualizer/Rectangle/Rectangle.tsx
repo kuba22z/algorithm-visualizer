@@ -1,6 +1,6 @@
 import {CSSProperties, ReactNode} from "react";
 import classNames from "classnames";
-import styles from '../styles/Rectangle.module.css'
+import styles from '../../../styles/Rectangle.module.css'
 import {TransitionStatus} from "react-transition-state";
 
 
