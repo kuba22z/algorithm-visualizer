@@ -3,11 +3,11 @@ import {useInterval} from "usehooks-ts";
 import {Nullable} from "../types/common";
 
 export function useDelayedForEach<T>(arr: T[], callback: (index: number, el: T) => void, delay: Nullable<number>) {
-    const [counter, setCounter] = useState(0);
+    const [iteration, setIteration] = useState(0);
 
     useInterval(() => {
-        callback(counter, arr[counter])
-        setCounter(counter + 1);
-    }, counter < arr.length && delay ? delay : null)
-    return {setCounter}
+        callback(iteration, arr[iteration])
+        setIteration(iteration + 1);
+    }, iteration < arr.length && delay ? delay : null)
+    return {setIteration}
 }

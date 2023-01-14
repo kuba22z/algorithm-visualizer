@@ -6,6 +6,7 @@ const defaultProps: { cssProps: CSSProperties, children: ReactNode } = {
     cssProps: {
         width: "100%",
         display: "flex",
+        minHeight: "150px",
         gap: "16px",
         flexWrap: "wrap"
     },
