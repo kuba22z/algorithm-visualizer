@@ -11,6 +11,8 @@ export class SortingAlgorithms {
                 return this.bubbleSort(sortingArray)
             case AvailableSortingAlgorithm.insertionSort:
                 return this.insertionSort(sortingArray)
+            case AvailableSortingAlgorithm.selectionSort:
+                return this.selectionSort(sortingArray)
             default:
                 return this.bubbleSort(sortingArray)
         }
@@ -38,7 +40,7 @@ export class SortingAlgorithms {
         return arr
     }
 
-    private static insertionSort = (arr: SortingArray<number>) => {
+    private static insertionSort = (arr: SortingArray<number>): SortingArray<number> => {
         for (let i = 1; i < arr.length; i++) {
             let currentValue = arr[i]
             let j
@@ -48,5 +50,28 @@ export class SortingAlgorithms {
             arr[j + 1] = currentValue
         }
         return arr
+    }
+
+    private static selectionSort(arr: SortingArray<number>): SortingArray<number> {
+        let min;
+
+        //start passes.
+        for (let i = 0; i < arr.length; i++) {
+            //index of the smallest element to be the ith element.
+            min = i;
+
+            //Check through the rest of the array for a lesser element
+            for (let j = i + 1; j < arr.length; j++) {
+                if (arr[j] < arr[min]) {
+                    min = j;
+                }
+            }
+            //compare the indexes
+            if (min !== i) {
+                //swap
+                [arr[i], arr[min]] = [arr[min], arr[i]];
+            }
+        }
+        return arr;
     }
 }

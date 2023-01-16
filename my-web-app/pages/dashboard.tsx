@@ -16,12 +16,11 @@ export default function Dashboard() {
             <br/>
             <VisualizerForm onSubmit={(visualizerInput: string[]) => {
                 setInput(visualizerInput)
-                setDelay(1000)
             }}
+                            delay={delay}
+                            setDelay={setDelay}
                             selectedAlgorithm={selectedAlgorithm}
-                            onContinueVisualization={() => setDelay(1000)}
-                            onStopVisualization={() => setDelay(null)}
-                            onChangeAlgorithm={(sortingAlgorithm) => setSelectedAlgorithm(sortingAlgorithm)}
+                            onChangeAlgorithm={sortingAlgorithm => setSelectedAlgorithm(sortingAlgorithm)}
             />
         </div>
     );
