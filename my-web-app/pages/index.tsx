@@ -1,3 +1,4 @@
+import Typography from "@mui/material/Typography";
 import * as React from "react";
 import {Book, useGetBooksQuery} from "../generated/graphql";
 
@@ -15,7 +16,9 @@ export default function Home() {
     return (
         <div>
             {err()}
+            <Typography>
                 21321332
+            </Typography>
         </div>
     )
 }
