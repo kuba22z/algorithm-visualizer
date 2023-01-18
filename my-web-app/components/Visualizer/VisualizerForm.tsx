@@ -96,7 +96,7 @@ export const VisualizerForm = (props: FieldArrayProps) => {
                            sx={{width: 150}}
                            label={"set Delay in ms"}
                            onChange={event => {
-                               setSelectedDelay(event.target.value)
+                               setSelectedDelay(parseInt(event.target.value))
                            }}/>
                 <Button type={"submit"} variant="outlined" id={"visualize-btn"}>visualize!</Button>
                 <Button id={"continue-btn"} variant={"outlined"}
