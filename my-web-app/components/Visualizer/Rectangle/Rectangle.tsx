@@ -10,7 +10,7 @@ export type RectangleProps =
 
 const defaultProps: { cssProps: CSSProperties, children: ReactNode, status: TransitionStatus } = {
     cssProps: {
-        background: "green",
+        background: "#00ffff",
         width: "100px",
         height: "100px",
         display: "flex",
